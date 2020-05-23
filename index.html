@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>John's Birthday Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="input-container">
+        <label for="dob">Enter your birthday:</label>
+        <input type="date" id="dob" name="dob" value="2000-01-01">
+        
+        <input type="submit" id="dob-button" value="Submit">
+      </div>
+      <!-- below is the definition of our table -->
+      <table>
+        <tr>
+          <td>Years</td>
+          <td id="years-value" class="right">0</td>
+        </tr>
+        <tr>
+          <td>Months</td>
+          <td id="months-value" class="right">0</td>
+        </tr>
+        <tr>
+          <td>Weeks</td>
+          <td id="weeks-value" class="right">0</td>
+        </tr>
+        <tr>
+          <td>Days</td>
+          <td id="days-value" class="right">0</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.26.0/moment.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
 
   <script src="js/main.js"></script>
-  <title>John's Birthday Page</title>
-</head>
-<body>
-  <div class="container">
-    <!-- below is the definition of our table -->
-    <table>
-      <tr>
-        <td>Years</td>
-        <td class="right">47</td>
-      </tr>
-      <tr>
-        <td>Months</td>
-        <td class="right">789</td>
-      </tr>
-      <tr>
-        <td>Weeks</td>
-        <td class="right">5675</td>
-      </tr>
-      <tr>
-        <td>Days</td>
-        <td class="right">875634</td>
-      </tr>
-    </table>
-  </div>
-</body>
 </html>
